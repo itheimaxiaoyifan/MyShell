@@ -1,0 +1,8 @@
+[Unit]
+Description=prometheus service
+
+[Service]
+ExecStart=/usr/local/bin/prometheus/prometheus --config.file=/usr/local/bin/prometheus/prometheus.yml 
+ 
+[Install]
+WantedBy=multi-user.target
